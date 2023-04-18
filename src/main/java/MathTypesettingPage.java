@@ -35,7 +35,7 @@ public class MathTypesettingPage extends Pages{
         driver.findElement(BUTTON_TRY).click();
     }
 
-    //TODO Select button options and value
+    //TODO Select button options and get value
     private final By BUTTON_SELECT = By.id("strict");
 
     public String[] selectStrict(String valueName)
@@ -60,21 +60,14 @@ public class MathTypesettingPage extends Pages{
     }
 
     //TODO navigate back from DOCUMENTATION to BlondsSite page
-    public boolean goBackToUrl(String url)
+    public boolean goBackToUrl(String url) throws InterruptedException
     {
         while(!driver.getCurrentUrl().equals(url)) {
             driver.navigate().back();
+            Thread.sleep(1500);
         }
         return driver.getCurrentUrl().equals(url);
-        /*int count = 6;
-        while(count > 0){
-            getDriver().navigate().back();
-            count--;
-            if(count < 2){
-                return true;
-            }
-        }
-        return false;*/
+
     }
 
     //TODO change Katex Code in Textarea

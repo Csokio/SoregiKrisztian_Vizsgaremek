@@ -1,0 +1,20 @@
+
+[
+  {
+    "category": "Ordered List",
+    "items": ["First item", "Second item", "Third item"]
+  },
+  {
+    "category": "Unordered List",
+    "items": ["List item", "Another item", "And another item"]
+  },
+  {
+    "category": "Nested list",
+    "items": [
+      {
+        "Fruit":["Apple", "Orange", "Banana"],
+        "Dairy":["Milk", "Cheese"]
+      }
+    ]
+  }
+]

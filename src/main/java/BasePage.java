@@ -20,30 +20,39 @@ public class BasePage extends Pages{
         super();
     }
 
-
     @Override
     public WebDriver getDriver()
     {
         return driver;
     }
 
+    public String userName = "Maya";
+    public String password = "Maya111";
+    public String email = "maya@gmail.com";
+
+    public BasePage(String userName, String password, String email) {
+        this.userName = userName;
+        this.password = password;
+        this.email = email;
+    }
+    public String getUserName()
+    {
+        return userName;
+    }
+    public String getPassword()
+    {
+        return password;
+    }
+    public String getEmail()
+    {
+        return email;
+    }
     private final String url = "https://lennertamas.github.io/blondesite";
     public void navigate()
     {
         driver.navigate().to(url);
     }
 
-    /*public void openPage()
-    {
-        //driver.switchTo().alert().accept();
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("openPage()");
-    }*/
-    public void acceptTermCond()
-    {
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("acceptTAndC()");
-    }
 
     //TODO Register User
 
@@ -71,11 +80,6 @@ public class BasePage extends Pages{
         driver.findElement(REGISTER_EMAIL).sendKeys(email);
     }
 
-    public void registerUser()
-    {
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("registerUser()");
-    }
 
     //TODO Login
 
@@ -97,16 +101,10 @@ public class BasePage extends Pages{
         driver.findElement(LOGIN_PASSWORD).sendKeys(password);
     }
 
-    public void loginUser()
-    {
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("myFunction()");
-    }
 
     //TODO click Archives
 
     private final By archive = By.xpath("//a[contains(@href,'2019')]");
-    //private final By archive = By.xpath("//a[@href='https://lennertamas.github.io/blondesite//archives/2019/03']");
 
     public void clickArchives()
     {
