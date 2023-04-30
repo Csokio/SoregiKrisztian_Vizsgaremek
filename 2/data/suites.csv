@@ -1,0 +1,15 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sun Apr 30 18:40:32 GMT 2023","Sun Apr 30 18:40:38 GMT 2023","5813","","FunctionsTest","","FunctionsTest","testGetListTypes","List Types","As a logged in user:
+    Check if the structure of the list types equals with the content of the expected json file"
+"passed","Sun Apr 30 18:39:59 GMT 2023","Sun Apr 30 18:40:01 GMT 2023","2015","","FunctionsTest","","FunctionsTest","testLogOut","Logout from Blondesite","As a logged in user:
+     Click on Logout button"
+"passed","Sun Apr 30 18:40:07 GMT 2023","Sun Apr 30 18:40:11 GMT 2023","4337","","FunctionsTest","","FunctionsTest","testKatexSelectButtonArray","Select Options","As a logged in user:
+    Verifying that the options in the select menu are equals with the expected ones"
+"passed","Sun Apr 30 18:40:01 GMT 2023","Sun Apr 30 18:40:07 GMT 2023","5381","","FunctionsTest","","FunctionsTest","testTableData","Comparing Table Data","As a logged in user:
+    Verifying that the table content equals with the expected file's content"
+"passed","Sun Apr 30 18:39:57 GMT 2023","Sun Apr 30 18:39:57 GMT 2023","531","","FunctionsTest","","FunctionsTest","testRegister","Register to Blondesite","Register a new account to Blondesite page, by providing username, email address and password"
+"passed","Sun Apr 30 18:40:15 GMT 2023","Sun Apr 30 18:40:32 GMT 2023","16865","","FunctionsTest","","FunctionsTest","testChangeTextAndNavigateBack","Change Text","As a logged in user:
+    Change the content of the textarea based on the provided file and navigate back to index page"
+"passed","Sun Apr 30 18:39:57 GMT 2023","Sun Apr 30 18:39:59 GMT 2023","2059","","FunctionsTest","","FunctionsTest","testLogin","Login to Blondesite","Login to Blondesite page, using appropriate username and password"
+"passed","Sun Apr 30 18:40:11 GMT 2023","Sun Apr 30 18:40:15 GMT 2023","4079","","FunctionsTest","","FunctionsTest","testKatexSelectButtonVisibleValue","Verify Selected Value","As a logged in user:
+    Verifying that the chosen select option is displayed"
