@@ -1,0 +1,15 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sun Apr 30 18:40:10 GMT 2023","Sun Apr 30 18:40:10 GMT 2023","731","","FunctionsTest","","FunctionsTest","testRegister","Register to Blondesite","Register a new account to Blondesite page, by providing username, email address and password"
+"passed","Sun Apr 30 18:40:47 GMT 2023","Sun Apr 30 18:40:53 GMT 2023","5825","","FunctionsTest","","FunctionsTest","testGetListTypes","List Types","As a logged in user:
+    Check if the structure of the list types equals with the content of the expected json file"
+"passed","Sun Apr 30 18:40:10 GMT 2023","Sun Apr 30 18:40:13 GMT 2023","2186","","FunctionsTest","","FunctionsTest","testLogin","Login to Blondesite","Login to Blondesite page, using appropriate username and password"
+"passed","Sun Apr 30 18:40:13 GMT 2023","Sun Apr 30 18:40:15 GMT 2023","2038","","FunctionsTest","","FunctionsTest","testLogOut","Logout from Blondesite","As a logged in user:
+     Click on Logout button"
+"passed","Sun Apr 30 18:40:25 GMT 2023","Sun Apr 30 18:40:30 GMT 2023","4256","","FunctionsTest","","FunctionsTest","testKatexSelectButtonVisibleValue","Verify Selected Value","As a logged in user:
+    Verifying that the chosen select option is displayed"
+"passed","Sun Apr 30 18:40:20 GMT 2023","Sun Apr 30 18:40:25 GMT 2023","5010","","FunctionsTest","","FunctionsTest","testKatexSelectButtonArray","Select Options","As a logged in user:
+    Verifying that the options in the select menu are equals with the expected ones"
+"passed","Sun Apr 30 18:40:30 GMT 2023","Sun Apr 30 18:40:47 GMT 2023","17183","","FunctionsTest","","FunctionsTest","testChangeTextAndNavigateBack","Change Text","As a logged in user:
+    Change the content of the textarea based on the provided file and navigate back to index page"
+"passed","Sun Apr 30 18:40:15 GMT 2023","Sun Apr 30 18:40:20 GMT 2023","5576","","FunctionsTest","","FunctionsTest","testTableData","Comparing Table Data","As a logged in user:
+    Verifying that the table content equals with the expected file's content"
