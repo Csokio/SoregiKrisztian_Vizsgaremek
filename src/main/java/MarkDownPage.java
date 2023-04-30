@@ -14,7 +14,7 @@ import java.util.*;
 public class MarkDownPage extends Pages {
 
     public MarkDownPage(WebDriver driver) {
-        //super();
+
         Pages.driver = driver;
     }
 
@@ -139,7 +139,6 @@ public class MarkDownPage extends Pages {
         int count = 1;
         for (int i = 0; i < keys.size(); i++) {
             String key = keys.get(i).getText();
-            //System.out.println(key);
             switch (count) {
                 case 1:
                     List<String> ordList = new ArrayList<>();

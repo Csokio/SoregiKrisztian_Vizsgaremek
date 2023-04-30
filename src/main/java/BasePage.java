@@ -26,9 +26,9 @@ public class BasePage extends Pages{
         return driver;
     }
 
-    public String userName = "Maya";
-    public String password = "Maya111";
-    public String email = "maya@gmail.com";
+    private String userName;
+    private String password;
+    private String email;
 
     public BasePage(String userName, String password, String email) {
         this.userName = userName;
@@ -80,6 +80,12 @@ public class BasePage extends Pages{
         driver.findElement(REGISTER_EMAIL).sendKeys(email);
     }
 
+    private final By REGISTER_MESSAGE = By.id("register-alert");
+
+    public String getSuccessRegisterMessage()
+    {
+        return driver.findElement(REGISTER_MESSAGE).getAttribute("innerHTML");
+    }
 
     //TODO Login
 
@@ -99,6 +105,22 @@ public class BasePage extends Pages{
     public void typePassword(String password)
     {
         driver.findElement(LOGIN_PASSWORD).sendKeys(password);
+    }
+
+    private final By BUTTON_LOGOUT = By.xpath("//a[@onclick='logout()']");
+
+    public boolean isLogoutDisplayed()
+    {
+        return driver.findElement(BUTTON_LOGOUT).isDisplayed();
+    }
+
+    //TODO Logout
+
+    private final By CONTAINER_LOGIN = By.id("login");
+
+    public boolean isLoginDisplayed()
+    {
+        return driver.findElement(CONTAINER_LOGIN).isDisplayed();
     }
 
 
@@ -122,10 +144,6 @@ public class BasePage extends Pages{
         driver.findElement(BUTTON_MARKDOWN).click();
         return new MarkDownPage(getDriver());
     }
-
-
-
-
 
 
 }

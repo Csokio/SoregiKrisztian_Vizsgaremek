@@ -9,7 +9,7 @@ import java.util.List;
 public class MathTypesettingPage extends Pages{
 
     public MathTypesettingPage(WebDriver driver){
-        //super();
+
         Pages.driver = driver;
     }
 
